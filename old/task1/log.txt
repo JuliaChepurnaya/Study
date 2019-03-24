@@ -1,0 +1,10 @@
+Author: JuliaChepurnaya <chepy@tut.by>
+Date:   Thu Feb 14 20:54:46 2019 +0300
+
+    add status.txt
+
+commit efc7c13137be9d537b4b81a5dd83b4c798989888
+Author: JuliaChepurnaya <chepy@tut.by>
+Date:   Thu Feb 14 20:52:38 2019 +0300
+
+    add .gitignore
