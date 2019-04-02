@@ -13,7 +13,6 @@ https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="shortcut icon" href="images/logo.png" type="image/png">
 </head>
 
-
 <body class="main">
   <header class="head">
     <a href="#" class="logo"><img width="65%" height="65%" src="images/line_logo.png" alt="Mint"></a>
@@ -26,265 +25,61 @@ https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 
   <div class="tape">
     <div class="photoposts">
-
-      <div class="post">
-        <div class="top-line">
-          <div class="user">
-            <div class="user-photo"></div>
-            <div class="username"><a href="#">Anna Doll</a></div>
-
-
+      <template id="photo-template">
+        <div class="post">
+          <div class="top-line">
+            <div class="user">
+              <div class="username"><a href="#"></a></div>
+            </div>
+            <div class="time"></div>
           </div>
-          <div class="time">
-            08.03.2019 16:07
-          </div>
-        </div>
-        <img width="100%" height="100%" src="images/1.jpg" alt="post" class="photo">
+          <img width="100%" height="100%" src="" alt="post" class="photo">
+          <div class="bot-line">
+            <div class="about-photo" >
+              <b><i></i></b>
+           </div>
+           <div class="like">
+              <button class="like" style=" padding: 0px;background-color: #f7f6f6;border: none;">
+                <img src="images/like.png" alt="like" style="margin-top: 2px;width: 4vw; display: flex;"></button>
+              <span><b>Alisa2017</b> и еще <b>27</b> нравится</span>
+            </div>
+            <div class="hashtags">
+              <p></p>
+            </div>
 
-
-        <div class="bot-line">
-          <div class="about-photo" >
-            <b><i>Улицы этого прекрасного города...</i></b>
-          </div>
-          <div class="like">
-            <img width="5%" height="50%" src="images/like.png" alt="like" class="like">
-            <b>Alisa2017</b> и еще <b>27</b> нравится
-          </div>
-          <div class="hashtags">
-            <p>
-              #street #city #beauty #beauty_mint</p>
-          </div>
-
-          <div class="comments">
-            <div class="comm-user">
-              <div class="name">
-                <a href="#"> <b>Valeria</b>:
-              </a></div>
-                <i>Так красиво)</i>
-              </div>
+            <div class="comments">
               <div class="comm-user">
                 <div class="name">
-                  <a href="#"><b>Max</b></a>:
+                  <a href="#"> <b>Valeria</b>:
+               </a></div>
+                  <i>Так красиво)</i>
                 </div>
-                  <i>Я там был прошлым летом!</i>
-                </div>
-                <div>
-                <button class="more-comments" type="button" value="Больше"><i>Больше</i></button>
-                <input class="add-comment" type="text" value="Добавить комментарий">
-                </div>
+                <div class="comm-user">
+                  <div class="name">
+                    <a href="#"><b>Max</b></a>:
+                  </div>
+                    <i>Я там был прошлым летом!</i>
+                  </div>
+                  <div>
+                  <button class="more-comments" type="button" value="Больше"><i>Больше</i></button>
+                  <input class="add-comment" type="text" value="Добавить комментарий">
+                  </div>
+           </div>
           </div>
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="top-line">
-          <div class="user">
-            <div class="user-photo"></div>
-            <div class="username"><a href="#">Alisa2017</a></div>
-
-
-          </div>
-          <div class="time">
-            07.03.2019 13:45
-          </div>
-        </div>
-        <img width="100%" height="100%" src="images/2.jpg" alt="post" class="photo">
-
-
-        <div class="bot-line">
-          <div class="about-photo" >
-            <b><i>Моя малышка! Хочу рассказать, как она у меня появилась.
-              Был холодный день. У меня было очень грустное настроение, меня тогда бросил
-              парень. Иду и вижу, что около подъезда сидит это маленькое чудо. По глазам
-              было видно, что ей не хватает любви и ласки. Я не выдержала и взяла ее к себе
-              домой. Вот так мы помогли друг другу: она мне помогла пережить горе расставания,
-              а я ей помогла обречь любящую семью.</i></b>
-          </div>
-          <div class="like">
-            <img width="5%" height="50%" src="images/like.png" alt="like" class="like">
-            <b>AnnaDoll</b> и еще <b>40</b> нравится
-          </div>
-          <div class="hashtags">
-            <p>
-              #cat #kitty #beauty #lovely #iLoveCats #sad_story #friends #save_animals #BeKind #eyes #animals</p>
-          </div>
-
-          <div class="comments">
-            <div class="comm-user">
-              <div class="name">
-                <a href="#"> <b>AnnaDoll</b>:
-                </a></div>
-              <i>Ооочень милая история)</i>
-            </div>
-            <div class="comm-user">
-              <div class="name">
-                <a href="#"><b>Kirillka</b></a>:
-              </div>
-              <i>Ты большая умница! Мы все любим котиков!</i>
-            </div>
-            <div>
-              <button class="more-comments" type="button" value="Больше"><i>Больше</i></button>
-              <input class="add-comment" type="text" value="Добавить комментарий" style="font-size: smaller">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="top-line">
-          <div class="user">
-            <div class="user-photo"></div>
-            <div class="username"><a href="#">Max</a></div>
-
-
-          </div>
-          <div class="time">
-            07.03.2019 10:43
-          </div>
-        </div>
-        <img width="100%" height="100%" src="images/3.jpg" alt="post" class="photo">
-
-
-        <div class="bot-line">
-          <div class="about-photo" >
-            <b><i>Я и мои друзья! Ребят, цените искреннюю дружбу</i></b>
-          </div>
-          <div class="like">
-            <img width="5%" height="50%" src="images/like.png" alt="like" class="like">
-            <b>AnnaDoll</b> и еще <b>37</b> нравится
-          </div>
-          <div class="hashtags">
-            <p>
-              #friends #friendship #happy</p>
-          </div>
-
-          <div class="comments">
-            <div class="comm-user">
-              <div class="name">
-                <a href="#"> <b>AnnaDoll</b>:
-                </a></div>
-              <i>:*</i>
-            </div>
-            <div>
-              <button class="more-comments" type="button" value="Больше"><i>Больше</i></button>
-              <input class="add-comment" type="text" value="Добавить комментарий" style="font-size: smaller">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="top-line">
-          <div class="user">
-            <div class="user-photo"></div>
-            <div class="username"><a href="#">Kirrilka</a></div>
-
-
-          </div>
-          <div class="time">
-            06.03.2019 21:00
-          </div>
-        </div>
-        <img width="100%" height="100%" src="images/4.jpg" alt="post" class="photo">
-
-
-        <div class="bot-line">
-          <div class="about-photo" >
-            <b><i>Знаете, лежу и думаю: как мне поздравить мою маму с 8 марта? Цветы - банально,
-            конфеты - вроде тоже... Я вот думаю, что самому приготовить ее любимый пирог будет
-            самым лучшим подарком (надеюсь, я не спалю кухню)</i></b>
-          </div>
-          <div class="like">
-            <img width="5%" height="50%" src="images/like.png" alt="like" class="like">
-            <b>Max</b> и еще <b>51</b> нравится
-          </div>
-          <div class="hashtags">
-            <p>
-              </p>
-          </div>
-
-          <div class="comments">
-            <div class="comm-user">
-              <div class="name">
-                <a href="#"> <b>Alisa2017</b>:
-                </a></div>
-              <i>ей точно будет приятно!</i>
-            </div>
-            <div class="comm-user">
-              <div class="name">
-                <a href="#"><b>Max</b></a>:
-              </div>
-              <i>АХАХАХАХАХ БРАТАН! ЗНАЯ, КАК ТЫ ГОТОВИШЬ, ЛУЧШЕ НЕ РИСКОВАТЬ!</i>
-            </div>
-            <div>
-              <button class="more-comments" type="button"  value="Больше"><i>Больше</i></button>
-              <input class="add-comment" type="text" value="Добавить комментарий" style="font-size: smaller">
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="post">
-        <div class="top-line">
-          <div class="user">
-            <div class="user-photo"></div>
-            <div class="username"><a href="#">Max</a></div>
-
-
-          </div>
-          <div class="time">
-            05.03.2019 15:11
-          </div>
-        </div>
-        <img width="100%" height="100%" src="images/5.jpg" alt="post" class="photo">
-
-
-        <div class="bot-line">
-          <div class="about-photo" >
-            <b><i>Тупо я после лета)))</i></b>
-          </div>
-          <div class="like">
-            <img width="5%" height="50%" src="images/like.png" alt="like" class="like">
-            <b>Kirillka</b> и еще <b>40</b> нравится
-          </div>
-          <div class="hashtags">
-            <p>
-              #fat #help #loveToEat #dog #prepare #summer #gym </p>
-        </div>
-
-          <div class="comments">
-            <div class="comm-user">
-              <div class="name">
-                <a href="#"> <b>AnnaDoll</b>:
-                </a></div>
-              <i>Го в зал вместе!</i>
-            </div>
-            <div class="comm-user">
-              <div class="name">
-                <a href="#"><b>Max</b></a>:
-              </div>
-              <i>Очень неплохая идея!</i>
-            </div>
-            <div>
-              <button class="more-comments" type="button" value="Больше"><i>Больше</i></button>
-              <input class="add-comment" type="text" value="Добавить комментарий" style="font-size: smaller">
-            </div>
-          </div>
-        </div>
-      </div>
+       </div>
+      </template>
 
     </div>
     <a href="#" class="showMore">Показать ещё</a>
   </div>
-
+  <template id = "profile-template">
     <div class="right_panel">
+
       <div class="profile">
         <a href="#" class="photo_profile">
           <img src="images/photo_profile.jpg" alt="Photo_Profile"></a>
         <div class="info_profile">
-          <p style="text-align: center; line-height: 140%; font-size: 80%; font-weight: 500; font-style: italic">
-            AnnaDoll<br>Город Минск<br>Дата рождения<br>03.04.2000г
-          </p>
+          <p style="text-align: center; line-height: 140%; font-size: 100%; font-weight: 500; font-style: italic"></p>
         </div>
       </div>
 
@@ -305,12 +100,15 @@ https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         </p>
       </div>
     </div>
+  </template>
 
 <footer>
   <i>Mint</i> <i>Chepurnaya Julia</i> <i>2 course 6 group</i> <i>chepy@tut.by </i> <i>08.03.2019</i>
 </footer>
 
-<!--<script src = "script.js"></script>-->
-  <script src = "class.js"></script>
+  <script src = "View.js"></script>
+  <script src = "PostCollection.js"></script>
+  <script src = "script.js"></script>
+
 </body>
 </html>
