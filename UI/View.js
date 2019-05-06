@@ -87,25 +87,27 @@ class View {
     buttonLike.addEventListener("click", liking);
 
     function liking() {
-      let foundPost = main.getPost(this.id);
-      let oldPost = foundPost;
-      if (!foundPost.likes.includes(main.getUserName())) {
-        foundPost.likes.push(main.getUserName());
-        main.replacePost(oldPost, foundPost);
-        let toUpdate = document.getElementById(foundPost.id);
-        View.updateLikes(foundPost, toUpdate);
-        let linkLike = toUpdate.querySelector(".like img");
-        linkLike.src = "images/like.png";
-      } else {
-        foundPost.likes.splice(foundPost.likes.indexOf(main.getUserName()), 1);
-        main.replacePost(oldPost, foundPost);
-        let toUpdate = document.getElementById(foundPost.id);
-        View.updateLikes(foundPost, toUpdate);
-        let linkLike = toUpdate.querySelector(".like img");
-        linkLike.src = "images/like2.png";
+      if (main.getUserName() !== "") {
+        let foundPost = main.getPost(this.id);
+        let oldPost = foundPost;
+        if (!foundPost.likes.includes(main.getUserName())) {
+          foundPost.likes.push(main.getUserName());
+          main.replacePost(oldPost, foundPost);
+          let toUpdate = document.getElementById(foundPost.id);
+          View.updateLikes(foundPost, toUpdate);
+          let linkLike = toUpdate.querySelector(".like img");
+          linkLike.src = "images/like.png";
+        } else {
+          foundPost.likes.splice(foundPost.likes.indexOf(main.getUserName()), 1);
+          main.replacePost(oldPost, foundPost);
+          let toUpdate = document.getElementById(foundPost.id);
+          View.updateLikes(foundPost, toUpdate);
+          let linkLike = toUpdate.querySelector(".like img");
+          linkLike.src = "images/like2.png";
+        }
+        let indexStartPost = main.getPhotoposts().indexOf(foundPost);
+        main.replaceSomePhotoPosts(indexStartPost, foundPost);
       }
-      let indexStartPost = main.getPhotoposts().indexOf(foundPost);
-      main.replaceSomePhotoPosts(indexStartPost, foundPost);
     }
 
     return temp;
